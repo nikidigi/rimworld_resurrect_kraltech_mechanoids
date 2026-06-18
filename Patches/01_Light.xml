@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechLightMech</defName>
+        <label>resurrect hostile light mechanoid (Alpha)</label>
+        <description>Resurrect a hostile light mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>60</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_MilitorAdvanced</li>
+            <li>Corpse_Mech_MilitorModifiedOne</li>
+            <li>Corpse_Mech_MilitorModifiedTwo</li>
+            <li>Corpse_Mech_MilitorModifiedThree</li>
+            <li>Corpse_Mech_MilitorModifiedFour</li>
+            <li>Corpse_Mech_MilitorModified</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>AlphaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MechGestatorEX"]/recipes</xpath>
+    <value>
+      <li>REM_KraltechLightMech</li>
+    </value>
+  </Operation>
+</Patch>

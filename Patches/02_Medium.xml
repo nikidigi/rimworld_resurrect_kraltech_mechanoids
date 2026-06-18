@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechMediumAlphaMech</defName>
+        <label>resurrect hostile medium mechanoid (Alpha)</label>
+        <description>Resurrect a hostile medium mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>60</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_AlphaLancer</li>
+            <li>Corpse_Mech_AlphaPikeman</li>
+            <li>Corpse_Mech_AlphaScyther</li>
+            <li>Corpse_Mech_AlphaTesseron</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>AlphaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechMediumBetaMech</defName>
+        <label>resurrect hostile medium mechanoid (Beta)</label>
+        <description>Resurrect a hostile medium mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>60</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_HydraulicKnight</li>
+            <li>Corpse_Mech_HydraulicPaladin</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>BetaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechMediumGammaMech</defName>
+        <label>resurrect hostile medium mechanoid (Gamma)</label>
+        <description>Resurrect a hostile medium mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>60</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_MechaSamurai</li>
+            <li>Corpse_Mech_Psionic</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>GammaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechMediumUltimaMech</defName>
+        <label>resurrect hostile medium mechanoid (Ultima)</label>
+        <description>Resurrect a hostile medium mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>60</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>5</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_Valkyrian</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>UltimaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MechGestatorEX"]/recipes</xpath>
+    <value>
+      <li>REM_KraltechMediumAlphaMech</li>
+      <li>REM_KraltechMediumBetaMech</li>
+      <li>REM_KraltechMediumGammaMech</li>
+      <li>REM_KraltechMediumUltimaMech</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechUltraHeavyBetaMech</defName>
+        <label>resurrect hostile ultraheavy mechanoid (Beta)</label>
+        <description>Resurrect a hostile ultraheavy mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>300</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>3</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_HydraulicEmpress</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>BetaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechUltraHeavyGammaMech</defName>
+        <label>resurrect hostile ultraheavy mechanoid (Gamma)</label>
+        <description>Resurrect a hostile ultraheavy mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>300</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>3</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_DragonWarlord</li>
+            <li>Corpse_Mech_Pestilence</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>GammaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechProjectMjolnir</defName>
+        <label>resurrect hostile mjolnir</label>
+        <description>Resurrect a hostile mjolnir. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>300</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>5</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_Mjolnir</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>ProjectMjolnir</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MechGestatorEX"]/recipes</xpath>
+    <value>
+      <li>REM_KraltechUltraHeavyBetaMech</li>
+      <li>REM_KraltechUltraHeavyGammaMech</li>
+      <li>REM_KraltechProjectMjolnir</li>
+    </value>
+  </Operation>
+</Patch>

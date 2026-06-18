@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Resurrect Kraltech Mechanoids</name>
+  <author>NIKIDIGI</author>
+  <url>https://github.com/nikidigi/rimworld_resurrect_kraltech_mechanoids</url>
+  <packageId>nikidigi.ResurrectKraltechMechanoids</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>An addon for Resurrect Enemy Mechanoids.</description>
+  <modDependencies>
+    <li>
+      <packageId>Snow.KraltechIndustries.Rebalanced</packageId>
+      <displayName>Kraltech Industries Rebalanced (1.6)</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3529775114</steamWorkshopUrl>
+      <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3529775114</downloadUrl>
+    </li>
+    <li>
+      <packageId>nikidigi.ResurrectEnemyMechanoids</packageId>
+      <displayName>Resurrect Enemy Mechanoids</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2882468335</steamWorkshopUrl>
+      <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2882468335</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Snow.KraltechIndustries.Rebalanced</li>
+    <li>nikidigi.ResurrectEnemyMechanoids</li>
+  </loadAfter>
+</ModMetaData>

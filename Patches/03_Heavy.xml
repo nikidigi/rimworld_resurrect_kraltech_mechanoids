@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechHeavyAlphaMech</defName>
+        <label>resurrect hostile heavy mechanoid (Alpha)</label>
+        <description>Resurrect a hostile heavy mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>120</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_AlphaCentipede</li>
+            <li>Corpse_Mech_AlphaTermite</li>
+            <li>Corpse_Mech_Dragon</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>AlphaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <RecipeDef ParentName="BaseHostileMechanoidRecipe">
+        <defName>REM_KraltechHeavyUltimaMech</defName>
+        <label>resurrect hostile heavy mechanoid (Ultima)</label>
+        <description>Resurrect a hostile heavy mechanoid. Its core must be reinitialized to accept new directives. Requires high subcores for reprogramming.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Corpses</li>
+              </categories>
+            </filter>
+            <count>1</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>120</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SubcoreHigh</li>
+              </thingDefs>
+            </filter>
+            <count>3</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Corpse_Mech_HydraulicGuardian</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>UltimaMechTech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MechGestatorEX"]/recipes</xpath>
+    <value>
+      <li>REM_KraltechHeavyAlphaMech</li>
+      <li>REM_KraltechHeavyUltimaMech</li>
+    </value>
+  </Operation>
+</Patch>
