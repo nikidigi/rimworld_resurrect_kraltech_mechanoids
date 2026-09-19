@@ -30,7 +30,7 @@
                 <li>SubcoreHigh</li>
               </thingDefs>
             </filter>
-            <count>3</count>
+            <count>2</count>
           </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -73,7 +73,7 @@
                 <li>SubcoreHigh</li>
               </thingDefs>
             </filter>
-            <count>3</count>
+            <count>2</count>
           </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -117,7 +117,7 @@
                 <li>SubcoreHigh</li>
               </thingDefs>
             </filter>
-            <count>5</count>
+            <count>3</count>
           </li>
         </ingredients>
         <fixedIngredientFilter>
